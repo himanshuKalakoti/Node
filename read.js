@@ -34,7 +34,6 @@ async function main() {
             maximumNumberOfResults: 5
         });
         
-
     } finally {
         // Close the connection to the MongoDB cluster
         await client.close();

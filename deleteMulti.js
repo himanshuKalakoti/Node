@@ -80,6 +80,7 @@ async function deleteListingsScrapedBeforeDate(client, date) {
  * @param {MongoClient} client A MongoClient that is connected to a cluster with the sample_airbnb database
  * @param {String} nameOfListing The name of the listing you want to find
  */
+
 async function printIfListingExists(client, nameOfListing) {
     // See https://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#findOne for the findOne() docs
     const result = await client.db("sample_airbnb").collection("listingsAndReviews").findOne({ name: nameOfListing });
