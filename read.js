@@ -2,10 +2,10 @@ const { MongoClient } = require('mongodb');
 
 async function main() {
     /**
-     * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
+     * Connection URI. Update, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/drivers/node/ for more details
      */
-    const uri = "mongodb+srv://Himanshu:Q74ijYsgiWbs5f1x@cluster0.xpt4pqw.mongodb.net/?retryWrites=true&w=majority";
+    const uri = "mongodb+srv:// <username>, <password>@cluster0.xpt4pqw.mongodb.net/?retryWrites=true&w=majority";
 
     /**
      * The Mongo Client you will use to interact with your database
@@ -58,7 +58,6 @@ async function findOneListingByName(client, nameOfListing) {
         console.log(`No listings found with the name '${nameOfListing}'`);
     }
 }
-
 /**
  * Print Airbnb listings with a minimum number of bedrooms and bathrooms.
  * Results will be limited to the designated maximum number of results.
