@@ -94,8 +94,3 @@ async function printIfListingExists(client, nameOfListing) {
         console.log(`No listings found with the name '${nameOfListing}'`);
     }
 }
-
-
-
-
-
