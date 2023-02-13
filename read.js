@@ -33,6 +33,7 @@ async function main() {
             minimumNumberOfBathrooms: 2,
             maximumNumberOfResults: 5
         });
+        
 
     } finally {
         // Close the connection to the MongoDB cluster
